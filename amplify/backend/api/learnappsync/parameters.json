@@ -1,0 +1,12 @@
+{
+  "AppSyncApiName": "learnappsync",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authlearnappsync9a74e8f8",
+      "Outputs.UserPoolId"
+    ]
+  },
+  "AuthModeLastUpdated": "2024-08-06T17:14:37.341Z"
+}

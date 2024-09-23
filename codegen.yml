@@ -1,0 +1,8 @@
+schema: "https://d5u66qrsjnedjeejjkuoy2reqq.appsync-api.eu-central-1.amazonaws.com/graphql" # Ersetze dies durch deine AppSync-URL
+documents: "src/graphql/**/*.ts" # Pfad zu deinen Abfragen und Mutationen
+generates:
+  src/generated/graphql.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
